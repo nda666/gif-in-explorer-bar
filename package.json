@@ -3,6 +3,7 @@
     "name": "adha bakhtiar",
     "email": "adhabakhtiar@gmail.com"
   },
+  "publisher": "adhabakhtiar",
   "name": "gif-in-explorer",
   "displayName": "gif-in-explorer",
   "description": "An extension to show a GIF in the explorer",
@@ -17,6 +18,13 @@
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "gif",
+    "in",
+    "explorer",
+    "gif in explorer",
+    "gif-in-explorer"
   ],
   "main": "./out/extension.js",
   "activationEvents": [
