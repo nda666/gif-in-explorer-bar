@@ -2,6 +2,8 @@
 
 This Visual Studio Code extension allows you to display GIFs within the editor, either in a dedicated sidebar view or in a webview panel. It's a lightweight and fun way to integrate visuals into your development workflow!
 
+![Alt text](./Screenshot.png)
+
 ## Features
 
 - **Sidebar GIF Viewer:** View a GIF in a custom sidebar panel.
