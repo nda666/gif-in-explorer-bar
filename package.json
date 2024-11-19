@@ -17,7 +17,7 @@
   "main": "./out/extension.js",
   "activationEvents": [
     "onView:explorer",
-    "onView:gifInExplorerView"
+    "onView:gifInSidebarView"
   ],
   "contributes": {
     "viewsContainers": {
