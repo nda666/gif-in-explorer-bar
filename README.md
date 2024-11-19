@@ -1,4 +1,4 @@
-# GIF Viewer Extension for VS Code
+# GIF-in-Explorer Extension for VS Code
 
 This Visual Studio Code extension allows you to display GIFs within the editor, either in a dedicated sidebar view or in a webview panel. It's a lightweight and fun way to integrate visuals into your development workflow!
 
