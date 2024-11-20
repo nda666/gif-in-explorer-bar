@@ -27,13 +27,6 @@ This Visual Studio Code extension allows you to display GIFs within the editor, 
 3. You can change the displayed GIF by modifying the path in the settings (either a local file path or a URL).
 4. The GIF will update in the sidebar whenever the setting is changed.
 
-### Webview Panel (Optional)
-
-To enable standalone webview panels:
-
-1. Uncomment the `openWebview` command in the source code.
-2. This will allow you to open a webview panel by executing the `gifInSidebar.open` command.
-
 ### Changing the GIF Path
 
 1. You can specify a custom GIF path via the extension settings.

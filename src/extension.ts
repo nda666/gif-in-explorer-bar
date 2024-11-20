@@ -130,10 +130,6 @@ class GifViewProvider implements vscode.WebviewViewProvider {
 
   private loadGifPathFromSettings() {
     const config = vscode.workspace.getConfiguration("gifInSidebar");
-    // this.setGifPath(
-    //   config.get<string>("gifPath") ||
-    //     vscode.Uri.joinPath(this.extensionUri, "media", "example.gif").fsPath
-    // );
     this.gifPath =
       config.get<string>("gifPath") ||
       vscode.Uri.joinPath(this.extensionUri, "media", "example.gif").fsPath;
