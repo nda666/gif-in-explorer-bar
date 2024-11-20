@@ -7,7 +7,9 @@ This Visual Studio Code extension allows you to display GIFs within the editor, 
 ## Features
 
 - **Sidebar GIF Viewer:** View a GIF in a custom sidebar panel.
-- **Webview Panel Support (Commented):** Option to open GIFs in a resizable, standalone webview (code available but commented out).
+- **Webview Panel Support (Optional):** Option to open GIFs in a resizable, standalone webview (code available but commented out).
+- **Customizable GIF Path:** Allows users to set a custom GIF path through settings. The GIF can be loaded from a local file path or a URL.
+- **Dynamic GIF Type:** The extension automatically detects whether the provided path is a file or a URL, making it easy to switch between local and online sources without manual configuration.
 
 ## Installation
 
@@ -21,11 +23,26 @@ This Visual Studio Code extension allows you to display GIFs within the editor, 
 ### Sidebar GIF Viewer
 
 1. The extension registers a custom webview in the sidebar.
-2. This webview automatically displays an example GIF located at `media/example.gif`.
+2. This webview automatically displays a default GIF located at `media/example.gif`.
+3. You can change the displayed GIF by modifying the path in the settings (either a local file path or a URL).
+4. The GIF will update in the sidebar whenever the setting is changed.
 
 ### Webview Panel (Optional)
 
-To enable standalone webview panels, uncomment the `openWebview` command in the source code. This allows you to open a webview panel by executing the `gifExplorerView.open` command.
+To enable standalone webview panels:
+
+1. Uncomment the `openWebview` command in the source code.
+2. This will allow you to open a webview panel by executing the `gifInSidebar.open` command.
+
+### Changing the GIF Path
+
+1. You can specify a custom GIF path via the extension settings.
+2. Supported paths:
+
+   - **Local file path** (e.g., `C:\path\to\your\gif.gif` or `/path/to/your/gif.gif`).
+   - **URL** (e.g., `https://example.com/path/to/gif.gif`).
+
+   The extension automatically detects whether the path is a file or a URL, so there's no need to manually configure the GIF type.
 
 ## Development
 
@@ -39,7 +56,7 @@ To enable standalone webview panels, uncomment the `openWebview` command in the 
 To use your own GIFs:
 
 1. Replace the `media/example.gif` file with your own.
-2. Ensure the path in the `getHtmlForWebview` function matches your new file's location.
+2. You can change the default GIF path from the settings by specifying either a local file path or a URL.
 
 ### Running the Extension
 
@@ -52,7 +69,7 @@ To use your own GIFs:
 The extension registers the following:
 
 - **View Provider:** `gifInSidebarView` – Adds a custom sidebar panel for displaying GIFs.
-- **Command (Optional):** `gifExplorerView.open` – Opens a standalone webview panel.
+- **Command (Optional):** `gifInSidebar.open` – Opens a standalone webview panel.
 
 ## License
 
