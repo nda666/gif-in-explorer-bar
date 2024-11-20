@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 - Updated `GifViewProvider` to load the GIF based on the current configuration without needing to set the `gifType` manually in settings.
 - Improved handling of the default GIF path, falling back to a default file if no setting is found.
 
-## [1.0.0] - YYYY-MM-DD
+## [1.0.0] - 2024-20-11
 
 ### Added
 
