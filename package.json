@@ -7,7 +7,7 @@
   "name": "gif-in-explorer",
   "displayName": "gif-in-explorer",
   "description": "An extension to show a GIF in the explorer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "media/example.gif",
   "repository": {
     "type": "git",
