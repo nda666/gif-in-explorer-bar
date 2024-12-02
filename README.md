@@ -2,6 +2,8 @@
 
 This extension lets you display GIFs in a custom sidebar within Visual Studio Code, either from a local file or a URL.
 
+https://marketplace.visualstudio.com/items?itemName=AdhaBakhtiar.gif-in-explorer
+
 ![Screenshot](./Screenshot.gif)
 
 ## Features
