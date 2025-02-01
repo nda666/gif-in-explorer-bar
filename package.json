@@ -7,7 +7,7 @@
   "name": "gif-in-explorer",
   "displayName": "gif-in-explorer",
   "description": "An extension to show a GIF in the explorer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "media/example.gif",
   "repository": {
     "type": "git",
@@ -28,8 +28,7 @@
   ],
   "main": "./out/extension.js",
   "activationEvents": [
-    "onView:explorer",
-    "onView:gifInSidebarView"
+    "onStartupFinished"
   ],
   "contributes": {
     "commands": [
@@ -45,8 +44,10 @@
     "views": {
       "explorer": [
         {
+          "accessibilityHelpContent": "Gif In Sidebar",
+          "contextualTitle": "Gif In Sidebar",
           "id": "gifInSidebarView",
-          "name": "GIF In Sidebar",
+          "name": "My Gif",
           "type": "webview",
           "icon": "media/icon.svg"
         }
